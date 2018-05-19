@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#FFFFFF"
+    tools:context=".MainActivity">
+    <TextView
+        android:id="@+id/time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#A40000"
+        android:textSize="20sp"
+        android:layout_marginTop="8dp"
+        android:layout_marginLeft="10dp"/>
+
+    <TextView
+        android:id="@+id/usd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_centerInParent="true"
+        android:textColor="#03C03C"
+        android:textSize="30sp"
+        android:layout_marginBottom="12dp"
+        />
+
+    <TextView
+        android:id="@+id/bir"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/usd"
+        android:layout_centerVertical="true"
+        android:text="@string/usd_name"
+        android:textColor="#03C03C"
+        android:layout_marginLeft="24dp"
+        android:textSize="30sp"
+        android:textStyle="italic"/>
+
+
+    <TextView
+        android:id="@+id/aud"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/usd"
+        android:layout_centerHorizontal="true"
+        android:textColor="#03C03C"
+        android:textSize="30sp"
+        android:layout_marginBottom="12dp"
+        />
+
+    <TextView
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/aud"
+        android:layout_below="@+id/usd"
+        android:layout_marginLeft="24dp"
+        android:text="@string/try_name"
+        android:textColor="#03C03C"
+        android:textSize="30sp"
+        android:textStyle="italic"/>
+
+    <TextView
+        android:id="@+id/cad"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/aud"
+        android:layout_centerHorizontal="true"
+        android:textColor="#03C03C"
+        android:textSize="30sp"
+        android:layout_marginBottom="12dp"
+        />
+
+    <TextView
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/cad"
+        android:layout_below="@+id/aud"
+        android:text="@string/gbp_name"
+        android:textColor="#03C03C"
+        android:textSize="30sp"
+        android:layout_marginLeft="24dp"
+        android:textStyle="italic"/>
+
+
+</RelativeLayout>
